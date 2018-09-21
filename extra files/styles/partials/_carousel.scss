@@ -1,0 +1,53 @@
+.carousel{
+    position: absolute;
+    top: 375px;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+
+    margin: 0;
+    padding: 0;
+}
+.gallery.carousel{
+    height: 250px;
+    top: 140px;
+    width: 60%;
+    margin: 30px auto;
+    .flickity-viewport{
+        height: 250px !important;
+    }
+}
+.carousel-cell {
+        width: 100%;
+        height: 100px;
+        margin-right: 10px;
+        border-radius: 10px;
+        counter-increment: carousel-cell;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover{
+            color: #ffffff;
+        }
+        h1{
+            margin: auto;
+        }
+        img{
+            height: 250px;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    }
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+.flickity-prev-next-button.previous{
+    left: -50px;
+}
+.flickity-prev-next-button.next{
+    right: -50px;
+}

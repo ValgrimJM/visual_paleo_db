@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>James MacDonald Project 3 - jQuery Web Application</title>
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        
+        <header>
+        </header>
+        
+        <div class="search-form" name="search-form">
+            <img class="logo-img" src="./assets/533800.svg" alt="">
+            <button class="to-top">Top <i class="far fa-arrow-alt-circle-up"></i></button>
+            <div class="search-bar">
+                <input type="text" class="animal-search" name="animal-search" placeholder="e.g 'Felis', 'Allosaurus'">
+                <button class="animal-search-button" name="animal-search-button">Search  <i class="fas fa-search"></i></button>
+            </div>
+            
+        </div>
+
+        <section class="splash" title="Justyn Warner - ROM Toronto">
+        </section>
+        <div class="welcome">
+            <h2>Welcome to James' Visual PaleoDB </h2> 
+            <h5>The panels below will let you explore a multitude of animals from Earth's history.  Click a panel below or enter a species name in the search bar to start discovering!</h5>
+        </div>
+
+        <section class="flickity-buttons">
+        <div class="carousel">
+            <div class="carousel-cell panel-1"><h1>Cambrian</h1></div>
+            <div class="carousel-cell panel-2"><h1>Devonian</h1></div>
+            <div class="carousel-cell panel-3"><h1>Carboniferous</h1></div>
+            <div class="carousel-cell panel-4"><h1>Permian</h1></div>
+            <div class="carousel-cell panel-5"><h1>Triassic</h1></div>
+            <div class="carousel-cell panel-6"><h1>Jurassic</h1></div>
+            <div class="carousel-cell panel-7"><h1>Cretaceous</h1></div>
+            <div class="carousel-cell panel-8"><h1>Paleogene</h1></div>
+            <div class="carousel-cell panel-9"><h1>Neogene</h1></div>
+            <div class="carousel-cell panel-10"><h1>Quarterly</13></div>
+        </div>
+        </section>
+        <ul id="accordion" class="accordion">
+            <li class="panel panel-0">
+                <div class="title-block"></div>
+                <div class="panel-content">
+                    <p>Thanks to the <a href="https://paleobiodb.org">PaleoDB</a> and <a href="https://www.mediawiki.org">MediaWiki</a>. </p>
+                    <p>Splash art is by <a href="https://unsplash.com/@justynwarner">Justyn Warner</a></p>
+                </div>
+            </li>
+            <li class="panel panel-1">
+                <div class="title-block"><h5>Cm</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-2">
+                <div class="title-block"><h5>D</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-3">
+                <div class="title-block"><h5>C</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-4">
+                <div class="title-block"><h5>P</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-5">
+                <div class="title-block"><h5>Tr</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-6">
+                <div class="title-block"><h5>J</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-7">
+                <div class="title-block"><h5>K</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-8">
+                <div class="title-block"><h5>Pg</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-9">
+                <div class="title-block"><h5>Ng</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+            <li class="panel panel-10">
+                <div class="title-block"><h5>Q</h5></div>
+                <div class="panel-content">
+                    <img>
+                    <h3></h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

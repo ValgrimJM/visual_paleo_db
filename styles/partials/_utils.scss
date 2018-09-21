@@ -1,0 +1,151 @@
+%panel-0{
+    // background-color:  #2D3689;
+    background-color: #171f40;
+    &:hover{
+        background-color: darken(#171f40, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#171f40, 30);
+    }
+}
+%panel-1{
+    // background-color: #446799;
+    background-color: #29526E;
+    &:hover{
+        background-color: darken(#29526E, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#29526E, 30);
+    }
+}
+%panel-2{
+    // background-color: #5099B2;
+    background-color: #5099B2;
+    &:hover{
+        background-color: darken(#5099B2, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#5099B2, 30);
+    }
+}
+%panel-3{
+    // background-color: #6AD8BB;
+    background-color: #82C0AF;
+    &:hover{
+        background-color: darken(#82C0AF, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#6AD8BB, 30);
+    }
+}
+%panel-4{
+    // background-color: #39D68A;
+    background-color: #D4C787;
+    &:hover{
+        background-color: darken(#D4C787, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#D4C787, 30);
+    }
+}
+%panel-5{
+    // background-color: #53D15C;
+    background-color: #CEB763;
+    &:hover{
+        background-color: darken(#CEB763, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#CEB763, 30);
+    }
+}
+%panel-6{
+    // background-color: #33C636;
+    background-color: #BFA95B;
+    &:hover{
+        background-color: darken(#BFA95B, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#BFA95B, 30);
+    }
+}
+%panel-7{
+    // background-color: #80D134;
+    background-color: #C8963E;
+    &:hover{
+        background-color: darken(#C8963E, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#C8963E, 30);
+    }
+}
+%panel-8{
+    // background-color: #92D836;
+    background-color: #917544;
+    &:hover{
+        background-color: darken(#917544, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#917544, 30);
+    }
+}
+%panel-9{
+    // background-color: #D3D134;
+    background-color: #82724E;
+    &:hover{
+        background-color: darken(#82724E, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#82724E, 30);
+    }
+}
+%panel-10{
+    // background-color: #D3AD30;
+    background-color: #706650;
+    &:hover{
+        background-color: darken(#706650, 20);
+    }
+    & + .panel-content{
+        background-color: lighten(#706650, 30);
+    }
+}
+@mixin panel-color($num){
+    @extend %panel-#{$num};
+}
+@for $panel-num from 0 through 10{
+    .panel-#{$panel-num}{
+        .title-block{
+        @include panel-color($panel-num);
+    }
+    }
+    .carousel-cell.panel-#{$panel-num}{
+        @include panel-color($panel-num);
+    } 
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		transform:         translateY(0)
+	}
+	40% {
+		transform:         translateY(-5px)
+	}
+	60% {
+		transform:         translateY(-2px)
+	}
+}

@@ -1,0 +1,39 @@
+
+.wrap{
+    background: linear-gradient(180deg,rgba(211,203,184,1),rgba(109,96,39,1));
+}
+
+.animal-header{
+    text-align: center;
+    h2{
+        margin-bottom: 12px;
+    }
+    h4{
+        margin: 10px;
+    }
+}
+.no-results{
+    text-align: center;
+}
+.return-button{
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5099B2;
+    border: 3px outset #305d6c;
+    &:hover{
+            background-color: #305d6c;
+            border: 3px outset darken(#305d6c, 10%);
+            transition: 0.5s;
+            i{
+                animation: shake 0.5s;
+            }
+        }
+}
+.animal-desc{
+    width: 80%;
+    margin: 370px auto 40px auto;
+}

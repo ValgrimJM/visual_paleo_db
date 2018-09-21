@@ -1,0 +1,67 @@
+@media (max-width: 800px){
+    .animal-block{
+        flex: 0 0 50%;
+    }
+}
+@media(max-width: 640px){
+    header{
+        height: 60px;
+    }
+    .search-form{
+        .animal-search{
+            flex: 0 0 75%;
+            height: 40px;
+            transition: 0.5s;
+        }
+        .animal-search-button{
+            flex: 0 0 25%;
+            height: 40px;
+            transition: 0.5s;
+        }
+        
+    }
+    .flickity-buttons{
+        display: block;
+    }
+    .title-block,{
+        display: none;
+    }
+    .accordion .panel{
+        visibility: hidden;
+        width: 0px;
+    }
+    .accordion .panel.active{
+        visibility: visible;
+        width: 100%;
+    }
+}
+@media(max-width: 480px){
+    .search-form{
+        flex-wrap: nowrap;
+        .animal-search{
+            text-indent: 5px;
+        }
+        .to-top{
+            height: 40px;
+            font-size: 11px;
+        }
+    }
+
+    .flickity-page-dots{
+        display: none;
+    }
+    .animal-info{
+        .flickity-prev-next-button.previous, .flickity-prev-next-button.next{
+        display: none;
+    }
+    }
+    
+    .flickity-prev-next-button.previous{
+        left: 30px;
+        top: 125px;
+    }
+    .flickity-prev-next-button.next{
+        right: 30px;
+        top: 125px;
+    }
+}
